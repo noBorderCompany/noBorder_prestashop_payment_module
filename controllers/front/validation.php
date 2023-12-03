@@ -2,6 +2,7 @@
 
 /*
 * noborder payment gateway
+* @developer Hanif Zekri
 * @publisher noborder
 * @copyright (C) 2020 noborder
 * @version  1.1
