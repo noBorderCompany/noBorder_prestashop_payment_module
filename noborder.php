@@ -1,13 +1,16 @@
 <?php
 
 /*
-* noborder payment gateway
-* @developer Hanif Zekri
-* @publisher noborder
-* @copyright (C) 2020 noborder
-* @version  1.1
-* @license http://www.gnu.org/licenses/gpl-2.0.html GPLv2 or later
-* https://noborder.tech
+* Plugin Name: noBorder crypto payment gateway for Prestashop
+* Description: <a href="https://noborder.tech">noBorder</a> crypto payment gateway for Prestashop.
+* Version: 1.1
+* Author: noBorder.tech
+* Author URI: https://noBorder.tech
+* Author Email: info@noBorder.tech
+* Text Domain: noBorder_Prestashop_payment_module
+* Tested version up to: 8.1
+* copyright (C) 2020 noBorder.tech
+* license http://www.gnu.org/licenses/gpl-3.0.html GPLv3 or later
 */
 
 if (!defined('_PS_VERSION_')) exit;
