@@ -2,14 +2,14 @@
 
 /*
 * Plugin Name: noBorder crypto payment gateway for Prestashop
-* Description: <a href="https://noborder.tech">noBorder</a> crypto payment gateway for Prestashop.
+* Description: <a href="https://noborder.company">noBorder</a> crypto payment gateway for Prestashop.
 * Version: 1.1
-* Author: noBorder.tech
-* Author URI: https://noBorder.tech
-* Author Email: info@noBorder.tech
+* Author: noBorder.company
+* Author URI: https://noBorder.company
+* Author Email: info@noBorder.company
 * Text Domain: noBorder_Prestashop_payment_module
 * Tested version up to: 8.1
-* copyright (C) 2020 noBorder.tech
+* copyright (C) 2020 noBorder.company
 * license http://www.gnu.org/licenses/gpl-3.0.html GPLv3 or later
 */
 
@@ -76,7 +76,7 @@ class noborder extends PaymentModule {
 		<label class="control-label col-lg-4 required"> API Key : </label>
 		<div class="col-lg-8">
 		<input type="text" name="noborder_api_key" value="' . Configuration::get('noborder_api_key') . '">
-		<div class="help-block"> You can create an API Key by going to <a href="https://noborder.tech/cryptosite" target="_blank">https://noborder.tech/cryptosite</a></div>
+		<div class="help-block"> You can create an API Key by going to <a href="https://noborder.company/cryptosite" target="_blank">https://noborder.company/cryptosite</a></div>
 		</div>
 		</div>
 		
@@ -84,7 +84,7 @@ class noborder extends PaymentModule {
         <label class="control-label col-lg-4 required"> Pay Currencies : </label>
 		<div class="col-lg-8">
 		<input type="text" name="noborder_pay_currency" value="' . Configuration::get('noborder_pay_currency') . '">
-		<div class="help-block"> By default, customers can pay through all <a href="https://noborder.tech/cryptosite" target="_blank">active currencies</a> in the gate, but if you want to limit the customer to pay through one or more specific crypto currencies, you can declare the name of the crypto currencies through this variable. If you want to declare more than one currency, separate them with a dash ( - ). </div>
+		<div class="help-block"> By default, customers can pay through all <a href="https://noborder.company/cryptosite" target="_blank">active currencies</a> in the gate, but if you want to limit the customer to pay through one or more specific crypto currencies, you can declare the name of the crypto currencies through this variable. If you want to declare more than one currency, separate them with a dash ( - ). </div>
 		</div>
 		</div>
 		
