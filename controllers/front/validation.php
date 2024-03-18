@@ -7,7 +7,7 @@
 * @copyright (C) 2020 noborder
 * @version  1.1
 * @license http://www.gnu.org/licenses/gpl-2.0.html GPLv2 or later
-* https://noborder.tech
+* https://noborder.company
 */
 
 class noborderValidationModuleFrontController extends ModuleFrontController {
@@ -91,7 +91,7 @@ class noborderValidationModuleFrontController extends ModuleFrontController {
 			'callback' => $callback
 		);
 		
-		$url = 'https://noborder.tech/action/ws/request_create';
+		$url = 'https://noborder.company/action/ws/request_create';
 		$ch = curl_init($url);
 		curl_setopt($ch, CURLOPT_POST, true);
 		curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($params));
@@ -141,7 +141,7 @@ class noborderValidationModuleFrontController extends ModuleFrontController {
 					'request_id' => $request_id
 				);				
 				
-				$url = 'https://noborder.tech/action/ws/request_status';
+				$url = 'https://noborder.company/action/ws/request_status';
 				$ch = curl_init($url);
 				curl_setopt($ch, CURLOPT_POST, true);
 				curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($params));
