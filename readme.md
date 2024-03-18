@@ -20,9 +20,9 @@ The noBorder Crypto Payment Gateway for Prestashop is a plugin that integrates t
 
 - **Plugin Name:** noBorder Crypto Payment Gateway for PrestaShop
 - **Version:** 1.1
-- **Author:** noBorder.tech
-- **Author URI:** [https://noBorder.tech](https://noBorder.tech)
-- **Author Email:** info@noBorder.tech
+- **Author:** noBorder.company
+- **Author URI:** [https://noBorder.company](https://noBorder.company)
+- **Author Email:** info@noBorder.company
 - **Text Domain:** noBorder_prestashop_payment_module
 - **WC tested up to:** 8.1
 - **Copyright (C):** 2020 noBorder
@@ -66,7 +66,7 @@ If you want to contribute to this project or report issues, please visit the Git
 
 ## Troubleshooting
 
-If you encounter any issues or have questions about the noBorder Crypto Payment Gateway for PrestaShop, please refer to the [official documentation](https://noBorder.tech) or contact our support team at [info@noBorder.tech](mailto:info@noBorder.tech).
+If you encounter any issues or have questions about the noBorder Crypto Payment Gateway for PrestaShop, please refer to the [official documentation](https://noBorder.company) or contact our support team at [info@noBorder.company](mailto:info@noBorder.company).
 
 ---
 
@@ -78,7 +78,7 @@ This project is licensed under the GPLv3 or later. See the [GNU General Public L
 
 ## Contact Information
 
-If you have any questions or need assistance, please contact us at [info@noBorder.tech](mailto:info@noBorder.tech).
+If you have any questions or need assistance, please contact us at [info@noBorder.company](mailto:info@noBorder.company).
 
 ---
 
