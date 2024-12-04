@@ -91,7 +91,7 @@ class noborderValidationModuleFrontController extends ModuleFrontController {
 			'callback' => $callback
 		);
 		
-		$url = 'https://noborder.company/action/ws/request_create';
+		$url = 'https://noborder.company/action/ws/request/create';
 		$ch = curl_init($url);
 		curl_setopt($ch, CURLOPT_POST, true);
 		curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($params));
@@ -141,7 +141,7 @@ class noborderValidationModuleFrontController extends ModuleFrontController {
 					'request_id' => $request_id
 				);				
 				
-				$url = 'https://noborder.company/action/ws/request_status';
+				$url = 'https://noborder.company/action/ws/request/status';
 				$ch = curl_init($url);
 				curl_setopt($ch, CURLOPT_POST, true);
 				curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($params));
