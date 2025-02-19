@@ -1,13 +1,16 @@
 <?php
 
 /*
-* noborder payment gateway
-* @developer Hanif Zekri
-* @publisher noborder
-* @copyright (C) 2020 noborder
-* @version  1.1
-* @license http://www.gnu.org/licenses/gpl-2.0.html GPLv2 or later
-* https://noborder.company
+* Plugin Name: noBorder crypto payment gateway for Prestashop
+* Description: <a href="https://noborder.company">noBorder</a> crypto payment gateway for Prestashop.
+* Version: 1.1
+* Author: noBorder.company
+* Author URI: https://noBorder.company
+* Author Email: info@noBorder.company
+* Text Domain: noBorder_Prestashop_payment_module
+* Tested version up to: 8.1
+* copyright (C) 2020 noBorder.company
+* license http://www.gnu.org/licenses/gpl-3.0.html GPLv3 or later
 */
 
 class noborderValidationModuleFrontController extends ModuleFrontController {
@@ -92,13 +95,19 @@ class noborderValidationModuleFrontController extends ModuleFrontController {
 		);
 		
 		$url = 'https://noborder.company/action/ws/request/create';
-		$ch = curl_init($url);
-		curl_setopt($ch, CURLOPT_POST, true);
-		curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($params));
-		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-		$response = curl_exec($ch);
-		curl_close($ch);
-				
+		$curl = curl_init();
+		curl_setopt_array($curl, [
+			CURLOPT_URL => $url,
+			CURLOPT_RETURNTRANSFER => true,
+			CURLOPT_MAXREDIRS => 5,
+			CURLOPT_TIMEOUT => 60,
+			CURLOPT_USERAGENT => $_SERVER["HTTP_USER_AGENT"],
+			CURLOPT_CUSTOMREQUEST => "POST",
+			CURLOPT_POSTFIELDS => json_encode($params),
+		]);
+		$response = curl_exec($curl);
+		curl_close($curl);
+		
 		$result = json_decode($response);
 
         if ($result->status != 'success') {
@@ -142,12 +151,18 @@ class noborderValidationModuleFrontController extends ModuleFrontController {
 				);				
 				
 				$url = 'https://noborder.company/action/ws/request/status';
-				$ch = curl_init($url);
-				curl_setopt($ch, CURLOPT_POST, true);
-				curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($params));
-				curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-				$response = curl_exec($ch);
-				curl_close($ch);
+				$curl = curl_init();
+				curl_setopt_array($curl, [
+					CURLOPT_URL => $url,
+					CURLOPT_RETURNTRANSFER => true,
+					CURLOPT_MAXREDIRS => 5,
+					CURLOPT_TIMEOUT => 60,
+					CURLOPT_USERAGENT => $_SERVER["HTTP_USER_AGENT"],
+					CURLOPT_CUSTOMREQUEST => "POST",
+					CURLOPT_POSTFIELDS => json_encode($params),
+				]);
+				$response = curl_exec($curl);
+				curl_close($curl);
 
 				$result = json_decode($response);
 
